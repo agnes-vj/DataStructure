@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace cs_data_structures_sprint.Playlist
 {
-    internal class TODO
+    internal record Song(string Title, double Duration)
     {
-        /* Delete this file and replace with your Playlist application classes. */
+       public override string ToString()
+        {
+            return $"{Title}:{Duration}";
+        }
     }
 }

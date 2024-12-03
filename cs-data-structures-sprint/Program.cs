@@ -1,79 +1,47 @@
 ﻿//Console.WriteLine("Your code can go here, if you like");
 using cs_data_structures_sprint.Exercises;
 using System.Collections;
-int[] intArray = [1, 4, 10, 15];
-Queue<int> intQueue = new Queue<int>(intArray);
-//intQueue.Enqueue(40);
-//intQueue.Enqueue(0);
-Exercise6.PrintQueue(intQueue);
-//int num = intQueue.Dequeue();
-//Console.WriteLine($"Queue after DeQueue {num}");
-//Exercise6.PrintQueue(intQueue);
+using cs_data_structures_sprint.RequestBenchmark;
+using cs_data_structures_sprint.Playlist;
 
-Console.WriteLine("Reverse Queue");
-intQueue = Exercise6.ReverseQueue(intQueue);
-Exercise6.PrintQueue(intQueue);
+List<Album> albums = new List<Album>();
 
-Queue<Student> studentQueue = new Queue<Student>([new Student("1", "Andrea"), new Student("2", "Anna")]);
-Console.WriteLine("Reverse student Queue");
-studentQueue = Exercise6.ReverseQueue(studentQueue);
-Exercise6.PrintQueue(studentQueue);
+Album modernEscapism = new Album("Modern Escapism", "blanket");
+modernEscapism.AddSong("White Noise", 4.37);
+modernEscapism.AddSong("Romance", 5.22);
+modernEscapism.AddSong("Last days of the Blue Blood Harvest", 5.27);
+modernEscapism.AddSong("Firmament", 3.45);
+modernEscapism.AddSong("The Mighty Deep", 2.39);
+modernEscapism.AddSong("In Awe", 4.00);
+modernEscapism.AddSong("Where the Light Takes Us", 3.51);
+modernEscapism.AddSong("Burial", 4.40);
+modernEscapism.AddSong("Violence", 5.05);
+modernEscapism.AddSong("Silent Ground", 1.35);
+modernEscapism.AddSong("Last Light", 5.22);
 
-//var andrea = new Student("1", "Andrea");
-//Exercise4.GradeStudent(andrea, 17);
-//Console.WriteLine(Exercise4.CheckGrade(andrea));
-//Exercise4.GradeStudent(andrea, 19);
-//Console.WriteLine(Exercise4.CheckGrade(andrea));
+albums.Add(modernEscapism);
 
-//Exercise4.GradeStudent("1","Mathematics", 17);
-////Console.WriteLine("here1");
-//Console.WriteLine(Exercise4.CheckGrade("1", "Mathematics"));
-////Console.WriteLine("Here2");
-//Exercise4.UpdateGrade("1", "Mathematics", 20);
-////Console.WriteLine("Here3");
-//Console.WriteLine(Exercise4.CheckGrade("1", "Mathematics"));
+var bonIver = new Album("Bon Iver", "Bon Iver");
+bonIver.AddSong("Perth", 4.22);
+bonIver.AddSong("Minnesota, WI", 3.52);
+bonIver.AddSong("Holocene", 5.37);
+bonIver.AddSong("Towers", 3.08);
+bonIver.AddSong("Mitchcant", 3.46);
+bonIver.AddSong("Hinnom, TX", 2.45);
+bonIver.AddSong("Wash", 4.59);
+bonIver.AddSong("Calgary", 4.10);
+bonIver.AddSong("Lisbon, OH", 1.33);
+bonIver.AddSong("Beth/Rest", 5.17);
 
-//Console.WriteLine(Exercise5.StackReverseWord("Mathematics"));
-//Console.WriteLine(Exercise5.StackReverseWord("C# is wonderful!"));
+albums.Add(bonIver);
 
-
-//Exercise1.PrintExesAndOhs();
-//LinkedList<string> cars = new LinkedList<string>();
-//cars.AddLast("Ford");
-//cars.AddLast("Kia");
-//cars.AddLast("BMW");
-//cars.AddLast("Lexus");
-//cars.AddLast("Skoda");
-//cars.AddLast("Mercedes");
-//cars.AddLast("Nissan");
-
-//foreach (string car in cars)
-//{
-//    Console.WriteLine(car);
-//}
-
-//Console.WriteLine("\n\n\n");
-//Exercise3.SwapElementPosition(cars, 1, 5);
-//foreach (string car in cars)
-//{
-//    Console.WriteLine(car);
-//}
-
-//Exercise2.PrintFirstAndLast<string>(cars);
-
-////Exercise2.PrintFirstAndLast(cars);
-
-//int[] intValues = { 1, 4, 6, 7, 8 };
-//LinkedList<int> values = new LinkedList<int>(intValues);
-//values.AddLast(10);
-//values.AddBefore(values.Last, 200);
-//Exercise2.PrintFirstAndLast(values);
-
-//LinkedList<Car> newCars = new LinkedList<Car>();
-//newCars.AddLast(new Car("Ford", "Icon", "Petrol"));
-//newCars.AddLast(new Car("Kia", "Model1", "Disel"));
-//newCars.AddLast(new Car("Nissan", "ModelA", "Petrol"));
-//newCars.AddLast(new Car("Skoda", "ModelX", "Disel"));
-
-//Exercise2.PrintFirstAndLast(newCars);
+var playlist = new Playlist();
+playlist.AddSong(modernEscapism.FindSong("Where the Light Takes Us"));
+playlist.AddSong(modernEscapism.FindSong("In Awe"));
+playlist.AddSong(modernEscapism.FindSong("Burial"));
+playlist.AddSong(modernEscapism.FindSong("Violence"));
+playlist.AddSong(modernEscapism.FindSong("Holocene"));
+playlist.AddSong(bonIver.FindSong("Towers"));
+playlist.AddSong(bonIver.FindSong("Beth/Rest"));
+playlist.AddSong(bonIver.FindSong("Mitchcant"));
 
