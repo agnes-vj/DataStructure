@@ -35,42 +35,33 @@ namespace cs_data_structures_sprint.Exercises
                 iterator++;
                 current = current.Next;
             }
-            
-            
 
 
-
-
-
-
-
-
-
-            //int node = 0;
-            //foreach (string item in list)
-            //{
-            //    if (node == index1)
-            //    {
-
-            //    }
-            //    node++;
-
-            //}
-
-
-
-
-            // Find Index of 
-            // AddBefore()
-            // a, b , c, d, e, f, g, 
-            // 0, 1 , 2, 3, 4, 5, 6,
-            // swap c with f
-            // index 2 with index 5
-            // index 5 add before index 2 and remove from index index 6
-            // a, b, f, c, d, e,  g, 
-            // 0 , 1, 2, 3, 4, 5, 6,
-            // index 3 add before index 5 and remove index 3
-            //
         }
     }
 }
+//int node = 0;
+//foreach (string item in list)
+//{
+//    if (node == index1)
+//    {
+
+//    }
+//    node++;
+
+//}
+
+
+
+
+// Find Index of 
+// AddBefore()
+// a, b , c, d, e, f, g, 
+// 0, 1 , 2, 3, 4, 5, 6,
+// swap c with f
+// index 2 with index 5
+// index 5 add before index 2 and remove from index index 6
+// a, b, f, c, d, e,  g, 
+// 0 , 1, 2, 3, 4, 5, 6,
+// index 3 add before index 5 and remove index 3
+//

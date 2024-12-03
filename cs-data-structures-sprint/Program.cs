@@ -6,7 +6,16 @@ Console.WriteLine(Exercise4.CheckGrade(andrea));
 Exercise4.GradeStudent(andrea, 19);
 Console.WriteLine(Exercise4.CheckGrade(andrea));
 
+Exercise4.GradeStudent("1","Mathematics", 17);
+//Console.WriteLine("here1");
+Console.WriteLine(Exercise4.CheckGrade("1", "Mathematics"));
+//Console.WriteLine("Here2");
+Exercise4.UpdateGrade("1", "Mathematics", 20);
+//Console.WriteLine("Here3");
+Console.WriteLine(Exercise4.CheckGrade("1", "Mathematics"));
 
+Console.WriteLine(Exercise5.StackReverseWord("Mathematics"));
+Console.WriteLine(Exercise5.StackReverseWord("C# is wonderful!"));
 
 
 //Exercise1.PrintExesAndOhs();

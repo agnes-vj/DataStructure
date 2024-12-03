@@ -8,11 +8,17 @@ namespace cs_data_structures_sprint.Exercises
 {
     internal class Exercise5
     {
-        public static string StackReverseWord(string str)
+        public static string? StackReverseWord(string str)
         {
             // Write your code here and replace "" with your result
             // Use a Stack<string> to reverse the string
-            return "";
+            Stack<char> reversedWord = new Stack<char>();
+            foreach (char letter in str)
+            {
+                reversedWord.Push(letter);
+            }
+            string reversedChars = new string(reversedWord.ToArray());
+            return reversedChars;
         }
     }
 }
